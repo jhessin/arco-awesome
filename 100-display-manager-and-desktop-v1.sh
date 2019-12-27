@@ -20,6 +20,7 @@ echo "Stop the installation with CTRL + C"
 echo "and run the alias - mirror in the terminal"
 echo "#################################################"
 
+sudo pacman -Rdd libdmx libxxf86dga
 sudo pacman -Syyu --noconfirm
 #installing displaymanager or login manager
 sudo pacman -S --noconfirm --needed lightdm
