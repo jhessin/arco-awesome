@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
+# First update everything
+sudo pacman -Scc --noconfirm &&
+sudo pacman -Rdd --noconfirm libdmx libxxf86dga &&
+sudo pacman -Syyu --noconfirm --needed &&
+sudo pacman -Rdd --noconfirm xorgproto
+yay -Syu --noconfirm --needed --noredownload --norebuild &&
+
+# Now install awesome
 ./000-use-all-cores-makepkg-conf-v4.sh &&
 ./100-display-manager-and-desktop-v1.sh &&
 ./110-install-sound-v3.sh &&
