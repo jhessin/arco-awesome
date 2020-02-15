@@ -1,22 +1,24 @@
 #!/usr/bin/env bash
 
-# first run update fix
-# by removing obsolete packages
-sudo pacman -Scc --noconfirm
-sudo pacman -Rdd --noconfirm libdmx libxxf86dga
-
-# update everything
-sudo pacman -Syyu --noconfirm --needed
-sudo pacman -Rdd --noconfirm xorgproto
-yay -Syu --noconfirm --needed --noredownload --norebuild
-
 # clear log
 rm install.log
 
 run() {
   echo "----====----====---====$1====----====----====----====" >> install.log
+  echo "----====----====---====$1====----====----====----===="
   $1 2>> install.log
 }
+
+# first run update fix
+# by removing obsolete packages
+run "sudo pacman -Scc --noconfirm"
+run "sudo pacman -Rdd --noconfirm libdmx libxxf86dga"
+
+# update everything
+run "sudo pacman -Syyu --noconfirm --needed"
+run "sudo pacman -Rdd --noconfirm xorgproto"
+run "yay -Syu --noconfirm --needed --noredownload --norebuild"
+
 # Now install awesome
 run ./000-use-all-cores-makepkg-conf-v4.sh
 run ./100-display-manager-and-desktop-v1.sh
