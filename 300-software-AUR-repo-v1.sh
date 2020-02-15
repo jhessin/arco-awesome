@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+# set -e
 echo "One or more packages are coming from AUR as source."
 echo "If a package from AUR fails to install, all other packages after that will NOT be installed."
 echo "We put the set -e for you to notice some package broke the script and you can intervene manually."
