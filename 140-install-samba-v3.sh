@@ -25,7 +25,8 @@ sudo systemctl enable nmb.service
 sudo systemctl start nmb.service
 
 ##Change your username here
-read -p "What is your login? It will be used to add this user to smb : " choice
+# read -p "What is your login? It will be used to add this user to smb : " choice
+choice=$USER
 sudo smbpasswd -a $choice
 
 #access samba share windows
