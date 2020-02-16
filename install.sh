@@ -1,13 +1,6 @@
 #!/usr/bin/env bash
 
-# clear log
-rm install.log
-
-run() {
-  echo "----====----====---====$1====----====----====----====" >> install.log
-  echo "----====----====---====$1====----====----====----===="
-  $1 2>> install.log
-}
+source functions.sh
 
 # first run update fix
 # by removing obsolete packages
@@ -38,5 +31,7 @@ run ./700-installing-fonts-v2.sh
 run ./800-autologin-v3.sh
 run ./900-fix-microcode-error-v1.sh
 run ./910-fix-mouse-cursor-breeze-snow-v1.sh
+
+get awesome
 
 echo "Be sure to run the scripts in system_setup"
