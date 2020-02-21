@@ -31,7 +31,7 @@ sudo pacman -S --noconfirm --needed variety
 
 echo "Installing category Development"
 
-sudo pacman -S --noconfirm --needed atom
+# sudo pacman -S --noconfirm --needed atom
 sudo pacman -S --noconfirm --needed geany
 sudo pacman -S --noconfirm --needed meld
 #sudo pacman -S --noconfirm --needed
@@ -58,7 +58,7 @@ sudo pacman -S --noconfirm --needed ristretto
 
 echo "Installing category Internet"
 
-sudo pacman -S --noconfirm --needed chromium
+# sudo pacman -S --noconfirm --needed chromium
 #sudo pacman -S --noconfirm --needed filezilla
 sudo pacman -S --noconfirm --needed firefox
 #sudo pacman -S --noconfirm --needed hexchat

@@ -37,7 +37,8 @@ sh AUR/install-mintstick-git-v*.sh
 
 echo "Installing category Development"
 
-sh AUR/install-sublime-text-v*.sh
+# sh AUR/install-sublime-text-v*.sh
+bash ./system_setup/000-install_apps.sh
 
 echo "Installing category Education"
 

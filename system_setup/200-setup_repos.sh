@@ -8,6 +8,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 cd ~/.config
 gmerge .config
+$HOME/.config/nvim/install.sh
 
 cd ~
 gmerge dotfiles.git
