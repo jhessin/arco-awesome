@@ -51,6 +51,7 @@ echo "Installing category Graphics"
 
 echo "Installing category Internet"
 
+sh AUR/install-enpass-v*.sh
 
 echo "Installing category Multimedia"
 
