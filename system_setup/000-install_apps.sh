@@ -3,6 +3,7 @@
 # Install
 
 # install the necessary programs
+cd "$(dirname "$0")"
 source ../functions.sh
 # get libreoffice-fresh &&
 

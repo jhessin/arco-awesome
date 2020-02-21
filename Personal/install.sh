@@ -1,5 +1,6 @@
 #!/bin/env bash
 
+cd "$(dirname "$0")"
 source ../functions.sh
 
 run ./100-install-personal-folders-v1.sh
