@@ -1,7 +1,7 @@
 #!/bin/env bash
 
 # clear log
-rm install.log
+rm -f install.log
 
 function run {
   echo "----====----====---====$1====----====----====----====" >> install.log

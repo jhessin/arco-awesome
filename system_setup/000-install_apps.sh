@@ -43,5 +43,8 @@ aurget vimpager
 # install yarn stuff
 yarn global add bash-language-server prettier stylelint eslint tslint
 
+# install teamviewer
+aurget teamviewer
+
 # install rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
