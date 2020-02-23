@@ -45,6 +45,11 @@ yarn global add bash-language-server prettier stylelint eslint tslint
 
 # install teamviewer
 aurget teamviewer
+sudo systemctl enable teamviewerd
+
+# install emby-server
+aurget emby-server
+sudo systemctl enable emby-server
 
 # install rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
