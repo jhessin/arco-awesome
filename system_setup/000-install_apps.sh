@@ -11,6 +11,7 @@ source ../functions.sh
 get python &&
 get python-pip &&
 pip install --user neovim
+pip install --user powerline-status
 
 # Install rvm, ruby, rails
 gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 \
@@ -50,6 +51,11 @@ sudo systemctl enable teamviewerd
 # install emby-server
 aurget emby-server
 sudo systemctl enable emby-server
+
+# setup zsh as the default?
+if confirm "Would you like to set up zsh"; then
+  chsh -s $(which zsh)
+fi
 
 # install rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
