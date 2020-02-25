@@ -11,7 +11,11 @@ source ../functions.sh
 get python &&
 get python-pip &&
 pip install --user neovim
+
+# Install powerline
 pip install --user powerline-status
+pacget powerline
+echo "Be sure to set your POWERLINE_PATH appropriately in .zshrc and .bashrc"
 
 # Install rvm, ruby, rails
 gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 \
