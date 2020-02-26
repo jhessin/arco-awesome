@@ -41,6 +41,9 @@ aurget neovim
 # install synergy for mouse sharing
 pacget synergy
 
+# install vifm
+pacget vifm
+
 # Install nvimpager and vimpager
 aurget nvimpager
 aurget vimpager
