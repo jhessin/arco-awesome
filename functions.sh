@@ -9,10 +9,6 @@ function run {
   $1 2>> install.log
 }
 
-function get {
-  run "yay -S --noconfirm --needed --noredownload --norebuild $1"
-}
-
 function confirm {
   # prompt for continue, or cancel
   echo -n "$1(y/N)?"
@@ -34,7 +30,8 @@ function clean {
 }
 
 function pacget {
-  if pacman -Qi $1 &> /dev/null; then
+  package="$1"
+  if pacman -Qi $package &> /dev/null; then
 
     tput setaf 2
     echo "################################################################"
@@ -49,9 +46,10 @@ function pacget {
     echo "######### Installing with pacman"
     echo "################################################################"
     tput sgr0
-    sudo pacman -S --noconfirm --needed $1
+    sudo pacman -S --noconfirm --needed $package
   fi
 }
+
 function aurget {
   package="$1"
 
