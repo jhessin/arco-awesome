@@ -70,5 +70,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # install pluckeye
 sudo ./pluckeye-linux-0.98.15.installer
 
+./programs/*.sh
+
 cd ../Personal
 ./install.sh
