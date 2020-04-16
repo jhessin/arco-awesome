@@ -82,3 +82,6 @@ pacget solaar
 
 # install mouse cursors
 pacget xcursor-themes
+
+# install hub for github
+pacget hub
