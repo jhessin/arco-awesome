@@ -37,4 +37,4 @@ fi
 run ./900-fix-microcode-error-v1.sh
 run ./910-fix-mouse-cursor-breeze-snow-v1.sh
 
-echo "Be sure to run the scripts in system_setup for your repos"
+echo "Be sure to run the scripts in system_setup"
