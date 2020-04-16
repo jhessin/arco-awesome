@@ -26,6 +26,7 @@ run ./150-install-network-discovery-v4.sh
 run ./160-install-tlp-for-laptops-v1.sh
 run ./200-software-arch-linux-repo-v2.sh
 run ./300-software-AUR-repo-v1.sh
+run ./310-extra-software.sh
 run ./400-software-arch-linux-repo-distro-specific-v1.sh
 run ./500-software-AUR-repo-distro-specific-v1.sh
 run ./600-software-from-ArcoLinux-repo-v1.sh
