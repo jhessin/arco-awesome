@@ -39,7 +39,7 @@ aurget yarn &&
   yarn global add neovim
 
 # i3lock and xautolock
-aurget i3lock
+aurget i3lock-color
 aurget xautolock
 
 # Install neovim
