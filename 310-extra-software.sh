@@ -24,9 +24,9 @@ pacget vifm
 
 echo "Installing rvm, ruby, and rails"
 
-gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 \
+sudo gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 \
   7D2BAF1CF37B13E2069D6956105BD0E739499BDB &&
-  \curl -sSL https://get.rvm.io | bash -s stable --rails
+  \sudo curl -sSL https://get.rvm.io | bash -s stable --rails
 
 [[ -s "$HOME/.mkshrc" ]] && source "$HOME/.mkshrc"                   # add rvm to path
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
@@ -70,6 +70,8 @@ sudo systemctl enable emby-server
 if confirm "Would you like to set up zsh"; then
   chsh -s $(which zsh)
 fi
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # install rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
