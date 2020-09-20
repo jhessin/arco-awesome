@@ -78,7 +78,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # install pluckeye
-sudo ./pluckeye-linux-0.98.15.installer
+# sudo ./pluckeye-linux-0.98.15.installer
 
 # install solaar
 pacget solaar
